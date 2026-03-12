@@ -1,0 +1,9 @@
+#+title: Documentation: about
+
+* What's this for?
+This directory exists to document progress made on the recon drone project: including discussions made on design, documents, development, and timeline.
+
+It will be beneficial to continually update these documents as we ove along the project to make writing reports easier.
+
+* File structure
+TODO
