@@ -1,15 +1,17 @@
-#+title: Docs: Software
-* Credits
+# Docs: Software 
+
+## Credits
 Jona, Cole will be the main people working on this side of the project.
 
-* TODO Web Server on the Pi
+## TODO Web Server on the Pi
 
-* TODO Video Streaming
+## TODO Video Streaming
 Communication with our drone will happen over a local network via wifi. Pragmatically, this gives us a nice and quick communication speed while in a network, but it means that the settings in which our drone will be useful are somewhat limited.
-** What to do
+
+### What to do
 (March 12th)
 Low latency video streaming was deemed the most important, meaning that we'd be looking at video transfer protocols that used lossy yet fast communication. The best bet as of right now seems to be Gstreamer, which gives us quick, fast, and automate-able streaming over a network. 
 
-* TODO Control interface
+## TODO Control interface
 
 
