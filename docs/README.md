@@ -13,7 +13,7 @@ It will be beneficial to continually update these documents as we ove along the 
 [mech.md](./mech.md) - any documentation about mechanical design decisions and implementation will go here.
 
 ## Logging progress
-Statements that are easily placed on a timeline (i.e. non-explainers) must have a timestamp of their approximate date within the project above it in parentheses. i.e.
+Statements that are easily placed on a timeline (i.e. non-explainers) must have a timestamp of their approximate date within the project above it in parentheses. e.g.
 
 ```
 (March 12th)
