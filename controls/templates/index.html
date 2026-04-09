@@ -69,8 +69,8 @@ function removeGamepad(gamepad) {
     document.querySelector(`#controller${gamepad.index}`).remove();
 }
 
-
 function updateStatus() {
+
   for (const gamepad of navigator.getGamepads()) {
     if (!gamepad) continue;
 
@@ -117,22 +117,23 @@ function updateStatus() {
 
       data = [R, L];
   }
-sendControl(data);
+    sendControl(data);
 
   requestAnimationFrame(updateStatus);
 }
 
 async function sendControl(control) {
     try {
-    const response = await fetch("/controller_data", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ ctrl: control })
+    const response = await fetch("/controller_data",
+    {
+        "method": "POST",
+        "headers": { "Content-Type":"application/json" },
+        "body": JSON.stringify({ "ctrl":control, "timestamp":Date.now() })
     });
         const data = await response.json();
-    } catch (err) {
-      console.error("Error: ", err);
-}
+    } catch (error) {
+        console.error("Error: ",error);
+        }
 
 }
       </script>

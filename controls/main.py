@@ -16,4 +16,4 @@ def root():
 def controller():
     d = request.get_json()
     print(d)
-    return render_template('index.html')
+    return jsonify({"success":"true"})
