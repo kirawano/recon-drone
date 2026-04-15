@@ -1,1 +1,1 @@
-sudo nmcli d wifi hotspot ifname wlan0 ssid $SSID password $PASSWORD
+sudo nmcli d wifi hotspot ifname wlan0 ssid $1 password $2
