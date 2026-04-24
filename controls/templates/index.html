@@ -108,10 +108,10 @@ function updateStatus() {
         el.textContent = `${i}: ${axis.toFixed(4)}`;
         el.setAttribute("value", axis + 1);
     }
-      let R = [gamepad.axes[0], gamepad.axes[1]];
+      let R = gamepad.axes[1];
       console.log("R1 right: "+R[0]);
       console.log("R1 up: "+R[1]);
-      let L = [gamepad.axes[2], gamepad.axes[3]];
+      let L = gamepad.axes[2];
       console.log("L1 right: "+L[0]);
       console.log("L1 up: "+L[1]);
 
@@ -144,7 +144,6 @@ async function sendControl(control) {
 
   <body>
     <p id="gamepad-info">the controller does the thingy</p>
-    <button onclick="sendControl([1, 0])">hi</button>
    </body>
 
 </html>
