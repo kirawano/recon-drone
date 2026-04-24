@@ -23,13 +23,10 @@ def controller():
 def get_dirs():
 	return d
 
-from gpiozero import Motor
+from gpiozero import *
 from time import sleep
 
 MOTORPIN = 27
 REVERSEPIN = 22
 
-GPIO.setup(MOTORPIN, GPIO.OUT)
-GPIO.setup(REVERSEPIN, GPIO.OUT)
-
-lm = Motor(forward=MOTORPIN, backward=REVERSEPIN)
+lm = Motor(forward=MOTORPIN, backward=REVERSEPIN, pwm=True)
