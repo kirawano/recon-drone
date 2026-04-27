@@ -59,6 +59,6 @@ def controller():
     arcade(motors, d)
     return jsonify({"success":"true"})
 
+
 def get_dirs():
 	return d
-
