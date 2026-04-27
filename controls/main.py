@@ -33,3 +33,9 @@ REVERSEPIN = 22
 # e.g. lm.forward(speed=0.5)
 lm = Motor(forward=MOTORPIN, backward=REVERSEPIN, pwm=True)
 
+def drive_motor(motor, speed):
+	s = abs(speed)
+	if speed > 0:
+		motor.forward(speed=s)
+	else:
+		motor.backward(speed=s)
