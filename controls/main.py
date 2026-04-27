@@ -20,6 +20,7 @@ def controller():
     print(d['ctrl'])
     return jsonify({"success":"true"})
 
+
 def get_dirs():
 	return d
 
@@ -29,4 +30,6 @@ from time import sleep
 MOTORPIN = 27
 REVERSEPIN = 22
 
+# e.g. lm.forward(speed=0.5)
 lm = Motor(forward=MOTORPIN, backward=REVERSEPIN, pwm=True)
+

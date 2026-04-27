@@ -81,16 +81,6 @@ function updateStatus() {
       const el = buttonElements[i];
 
       const pct = `${Math.round(button.value * 100)}%`;
-      el.style.backgroundSize = `${pct} ${pct}`;
-      if (button.pressed) {
-        el.textContent = `Button ${i} [PRESSED]`;
-        el.style.color = "#42f593";
-        el.className = "button pressed";
-      } else {
-        el.textContent = `Button ${i}`;
-        el.style.color = "#2e2d33";
-        el.className = "button";
-      }
     }
 
       gamepad.buttons.forEach((button, index) => {
