@@ -22,8 +22,8 @@ def drive_motor(motor, speed):
 
 # argument order: list(lm, rm), list(lstick, rstick)
 def arcade(dir):
-	lraw = dir[0] - dir[1]
-	rraw = dir[0] + dir[1]
+	lraw = (dir[0] - dir[1])/2
+	rraw = (dir[0] + dir[1])/2
 	
 	# hack
 	if lraw > 1:

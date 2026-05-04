@@ -12,7 +12,7 @@ while True:
 	data, addr = sock.recvfrom(1024)
 	try:
 		message = json.loads(data.decode())
-		d = [message.get("l", 0), message.get("r", 0)]
+		d = [-message.get("l", 0), -message.get("r", 0)]
 		arcade(d)
 	except json.JSONDecodeError:
 		print("received malformed packet")
