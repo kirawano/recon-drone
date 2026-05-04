@@ -9,4 +9,4 @@ x264enc tune=zerolatency bitrate=3000 speed-preset=ultrafast ! \
 queue ! \
 h264parse config-interval=1000  ! \
 rtph264pay aggregate-mode=zero-latency ! \
-udpsink host=10.54.250.142 port=5000 buffer-size=5
+udpsink host=10.240.183.142 port=5000 buffer-size=5
