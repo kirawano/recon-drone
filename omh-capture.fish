@@ -5,4 +5,5 @@ gst-launch-1.0 -v \
     h264parse ! \
     avdec_h264 ! \
     videoconvert ! \
+#   videoflip method=vertical-flip ! \
     autovideosink sync=false

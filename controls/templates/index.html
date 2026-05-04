@@ -69,6 +69,10 @@ function removeGamepad(gamepad) {
     document.querySelector(`#controller${gamepad.index}`).remove();
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function updateStatus() {
 
   for (const gamepad of navigator.getGamepads()) {
@@ -108,6 +112,7 @@ function updateStatus() {
       data = [R, L];
   }
     sendControl(data);
+    sleep(500);
 
   requestAnimationFrame(updateStatus);
 }
