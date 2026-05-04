@@ -1,1 +1,1 @@
-fish omh-stream.fish & flask --app controls/main.py run --host=0.0.0.0
+fish omh-stream.fish & python controls/sock.py
